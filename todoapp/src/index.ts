@@ -13,9 +13,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use('/', router);
 
-// app.get('/', (req, res) =>{
-//     res.send('Hello World')
-// })
+
 mongoose.connect(process.env.DATABASE_URL!, ()=>{
 
     console.log("Database connected");
@@ -31,3 +29,4 @@ app.listen(port, () =>{
 
 
 export default app
+
