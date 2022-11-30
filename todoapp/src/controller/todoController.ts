@@ -103,7 +103,7 @@ export const deleteTodo = async(req:Request, res:Response)=>{
     }else{
         return res.status(400).json({
             message: "Your to-do failed to saved"
-        })
+        });
     }
 }
 
