@@ -2,7 +2,8 @@ import mongoose, {Schema} from 'mongoose'
 
 
 interface todoInstance{
-
+    _id:string,
+    
     name:string,
 
     description:string,
